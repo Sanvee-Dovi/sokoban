@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "953cc7f7-fe11-4d72-b363-f7b168641ec2": {
+      "ProjectGuid": "953cc7f7-fe11-4d72-b363-f7b168641ec2",
+      "DisplayName": "Sokoban_project",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
