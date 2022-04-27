@@ -79,3 +79,12 @@ ce projet  consiste à la création du célèbre jeu Sokoban , avec les différe
 * création de l'évenement click sur le bouton recommencer 
 * création de la fonction restart qui permet d'initialiser la carte
 
+***
+
+## Partie 10 : Fin de l'implémentation du Jeu
+
+* vérification si l'utilisateur a gagné
+* afficher le box de notifications pour nous signalez notre victoire
+
+# Fin   
+

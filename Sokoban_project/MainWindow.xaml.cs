@@ -39,6 +39,16 @@ namespace Sokoban_project
                 jeu.ToucheAppuyee(e.Key);
                 Redessiner();
             }
+            if (jeu.Fini())
+            {
+                MessageBoxResult msg = MessageBox.Show("Bravo vous avez gagné en " + jeu.NbDeplacements + "  mouvements.",
+                    "Souhaitez vous recommencer ?", MessageBoxButton.YesNo, MessageBoxImage.Information);
+                if(msg == MessageBoxResult.Yes)
+                {
+                    jeu.Restart();
+                    Redessiner();
+                }
+            }
             
         }
 

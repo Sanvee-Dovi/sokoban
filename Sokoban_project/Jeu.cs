@@ -181,5 +181,17 @@ namespace Sokoban_project
             initcarte();
             nbDeplacements = 0; 
         }
+
+        public bool Fini()
+        {
+            foreach (Position caisse in caisses)
+            {
+                if (grille[caisse.x, caisse.y] != Etat.Cible)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
