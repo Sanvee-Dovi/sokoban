@@ -25,4 +25,10 @@
 * Création initcart qui permet d'initialisé la grille par les etats  en fonction des caratères fourni (X=mur,o=cible,.= vide etc..)
   
 ***
+## Partie 3 : Affichage de la carte en interface graphique 
+
+* modification de main windows
+* parcours de la grille de jeu et ajoute d'image au case spécifique , (vide = sol.png, mur = mur.png , cible = cible .png)
+* création de la fonction dessiner et inpléme,tation de cette dernière qui s'assure de déssiner les différents de la grille de jeu
   
+***  

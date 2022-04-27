@@ -19,3 +19,9 @@ C:\Users\hp\source\repos\sokoban\Sokoban_project\obj\Debug\net6.0-windows\Sokoba
 C:\Users\hp\source\repos\sokoban\Sokoban_project\obj\Debug\net6.0-windows\ref\Sokoban_project.dll
 C:\Users\hp\source\repos\sokoban\Sokoban_project\obj\Debug\net6.0-windows\Sokoban_project.pdb
 C:\Users\hp\source\repos\sokoban\Sokoban_project\obj\Debug\net6.0-windows\Sokoban_project.genruntimeconfig.cache
+C:\Users\hp\source\repos\sokoban\Sokoban_project\obj\Debug\net6.0-windows\Sokoban_project_Content.g.cs
+C:\Users\hp\source\repos\sokoban\Sokoban_project\bin\Debug\net6.0-windows\images\caisse.png
+C:\Users\hp\source\repos\sokoban\Sokoban_project\bin\Debug\net6.0-windows\images\cible.png
+C:\Users\hp\source\repos\sokoban\Sokoban_project\bin\Debug\net6.0-windows\images\mur.png
+C:\Users\hp\source\repos\sokoban\Sokoban_project\bin\Debug\net6.0-windows\images\perso.png
+C:\Users\hp\source\repos\sokoban\Sokoban_project\bin\Debug\net6.0-windows\images\sol.png

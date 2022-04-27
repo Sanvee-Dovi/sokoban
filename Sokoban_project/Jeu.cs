@@ -17,13 +17,13 @@ namespace Sokoban_project
         }
 
         //attribut grille qui represente la grille de jeu
-        private Etat[,] grille;
+        private  Etat[,] grille;
 
         //attribut de type liste qui represente la liste des caisses qui sont des positions
         private List<Position> caisses;
 
         //chaine de caratere contenant les symboles de la map
-        static string grilleTxt = "..XXXXXX..XXX.oo.XXXX..o..o..XX........XXXX....XXX..XX.CXX...XXXC.XXX..X.CP.C.X..X......X..XXXXXXXX." ;
+        static string grilleTxt = "..XXXXXX..XXX.oo.XXXX..o..o..XX........XXXX....XXX..XX.CXX...XXXC.XXX..X.CP.C.X..X......X..XXXXXXXX.";
 
         // attribut position qui represente la position du personage
         private Position personage;
@@ -41,9 +41,12 @@ namespace Sokoban_project
 
         private void initcarte()
         {
-            for(int ligne =0; ligne < 10; ligne++)
+            //creation d'une liste de caisse
+            caisses = new List<Position>(); 
+
+            for (int ligne = 0; ligne < 10; ligne++)
             {
-                for(int colonne = 0; colonne< 10; colonne++)
+                for (int colonne = 0; colonne < 10; colonne++)
                 {
                     switch (grilleTxt[ligne * 10 + colonne])
                     {
@@ -66,7 +69,14 @@ namespace Sokoban_project
                             break;
 
 
+                    }
+                }
             }
+        }
+
+        public Etat  Case(int ligne, int colonne)
+        {
+            return grille[ligne,colonne];
         }
     }
 }
