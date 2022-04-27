@@ -81,8 +81,40 @@ namespace Sokoban_project
             }
 
             //cas de caisse
+            Position caisse = (Position)CaisseInPos(newPos);
+            if (caisse!= null)
+            {
+                Position newPosCaisse  = new Position(caisse.x, caisse.y);
+                CalculNewPos(newPosCaisse, key);  
+                if(grille[newPosCaisse.x,newPosCaisse.y] == Etat.Mur)
+                {
+                    return false;
+                }else if (CaisseInPos(newPosCaisse)!= null)
+                {
+                    return false;
+                }
+                else
+                {
+                    caisse.x = newPosCaisse.x;
+                    caisse.y = newPosCaisse.y;
+                    return true;
+
+                }
+            }
 
             return true;
+        }
+
+        private object CaisseInPos(Position newPos)
+        {
+            foreach(Position caisse in caisses)
+            {
+                if(caisse.x == newPos.x && caisse.y == newPos.y)
+                {
+                    return caisse;
+                }
+            }
+            return null;    
         }
 
 

@@ -3,6 +3,11 @@
 ## Sanvee Cédric DOVI
 
 ***
+## Explication du Projet sokoban
+ce projet  consiste à la création du célèbre jeu Sokoban , avec les différents outils de dévéloppement ci dessous.
+
+***
+
 ### Outils de devéloppement 
 - [ ] C#
 - [ ] Microsoft Visual Code 2022
@@ -10,6 +15,8 @@
 - [ ] .NET
   
 ***
+
+
 ## Partie 1 : Mise en place de l'interface graphique de la grille de jeu  
 
 * Création d'un canvas contenant la grille de jeu.
@@ -52,4 +59,9 @@
 * mise en place du test CaseOk pour s'assurer s'il y a pas un mur sur notre nouvelle case
   
 ***
+
+## Partie 7 : Gestion de Déplacement des caisses
+
+* Création de la fonction CaisseInpos qui nous permet de detecter l'existence d'une caisse la notre prochain case par rapport au déplacement
+* gestion des déplacements des casse par rapport au faite si il y a l'existence d'un mur , d'un espace ou d'une autre caisse
 
