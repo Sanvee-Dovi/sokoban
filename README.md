@@ -72,5 +72,10 @@ ce projet  consiste à la création du célèbre jeu Sokoban , avec les différe
 * Gestion du nombre de déplacements en créant une variable pour
 * dessiner ou ecrire le nombre de déplacements via l'interface graphique grace à la fonction afficherDéplacements
   
-***  
+***
+
+## Partie 9 : Gestion du bouton recommencer
+
+* création de l'évenement click sur le bouton recommencer 
+* création de la fonction restart qui permet d'initialiser la carte
 

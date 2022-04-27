@@ -9,7 +9,7 @@
     <Canvas Margin="0,0,0,3">
         <Canvas x:Name="cnvGrille" Height="500" Width="500" Canvas.Left="29.5" Canvas.Top="92.52" Background="Black"/>
         <Canvas x:Name="cnvMobiles" Height="500" Width="500" RenderTransformOrigin="0.464,0.468" Canvas.Left="29.5" Canvas.Top="92.52"/>
-        <Button x:Name="btnRecommencer" Content="Recommencer" Canvas.Left="29.5" Canvas.Top="27.04" Height="30" Width="119" FontSize="14" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+        <Button x:Name="btnRecommencer" Content="Recommencer" Canvas.Left="29.5" Canvas.Top="27.04" Height="30" Width="119" FontSize="14" FontWeight="Bold" FontFamily="Comic Sans MS" Click="btnRecommencer_Click_1"/>
         <TextBlock Canvas.Left="211.721" TextWrapping="Wrap" Canvas.Top="35.02" FontWeight="Bold" FontFamily="Comic Sans MS" FontSize="14"><Run Text="Nombre "/><Run Text="de déplacements"/><Run Text=" :"/></TextBlock>
         <TextBlock x:Name="txtNbDeplacement" Canvas.Left="399.144" TextWrapping="Wrap" Canvas.Top="36.795" FontSize="14" FontWeight="Bold" FontFamily="Comic Sans MS" Width="36"><Run Language="fr-fr" Text="0"/></TextBlock>
     </Canvas>

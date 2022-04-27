@@ -175,5 +175,11 @@ namespace Sokoban_project
         {
             return grille[ligne,colonne];
         }
+
+        public void Restart()
+        {
+            initcarte();
+            nbDeplacements = 0; 
+        }
     }
 }

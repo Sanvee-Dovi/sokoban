@@ -86,6 +86,8 @@ namespace Sokoban_project
             } 
         }
 
+       
+
         private void DessinerCarte()
         {
             for(int ligne =0; ligne < 10; ligne++)
@@ -112,6 +114,12 @@ namespace Sokoban_project
                     cnvGrille.Children.Add(r);
                 }
             }
+        }
+
+        private void btnRecommencer_Click_1(object sender, RoutedEventArgs e)
+        {
+            jeu.Restart();
+            Redessiner();
         }
     }
 }
