@@ -43,3 +43,13 @@
 
 * Creéation d'une fonction toucheappuyee qui permet d'effectuer les mouvements du personnage en fonction de la touche appuyée
 * Creéation et implémentation  de la fonction Redessiner qui permet de redesssiner les élément de la grille en cas de Déplacements 
+  
+***
+
+## Partie 6 : Gestion de Déplacements par rapport au mur
+
+* création et implement de la fonction CalculNewPos qui calcul la nouvelle position en fonction du deplacement
+* mise en place du test CaseOk pour s'assurer s'il y a pas un mur sur notre nouvelle case
+  
+***
+

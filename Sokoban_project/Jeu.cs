@@ -42,8 +42,19 @@ namespace Sokoban_project
 
         public  void ToucheAppuyee(Key key)
         {
-            Position newPos = new Position(personage.x,personage.y);
+            Position newPos = new Position(personage.x, personage.y);
 
+            CalculNewPos( newPos, key);
+
+            if (CaseOk(newPos, key))
+            {
+                personage = newPos;
+            }
+
+        }
+
+        private static void CalculNewPos(Position newPos, Key key)
+        {
             switch (key)
             {
                 case Key.Down:
@@ -59,8 +70,19 @@ namespace Sokoban_project
                     newPos.y++;
                     break;
             }
+        }
 
-            personage = newPos;
+        private bool CaseOk(Position newPos, Key key)
+        {
+            //rencontre de mur 
+           if(grille[newPos.x,newPos.y] == Etat.Mur)
+            {
+                return false;
+            }
+
+            //cas de caisse
+
+            return true;
         }
 
 
