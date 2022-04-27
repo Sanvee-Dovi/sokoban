@@ -17,16 +17,27 @@ namespace Sokoban_project
         }
 
         //attribut grille qui represente la grille de jeu
-        private  Etat[,] grille;
+        private Etat[,] grille;
 
         //attribut de type liste qui represente la liste des caisses qui sont des positions
         private List<Position> caisses;
+
+        //les propriétés de caisses
+        public List<Position> Caisses
+        {
+            get{return caisses ;}
+        }
 
         //chaine de caratere contenant les symboles de la map
         static string grilleTxt = "..XXXXXX..XXX.oo.XXXX..o..o..XX........XXXX....XXX..XX.CXX...XXXC.XXX..X.CP.C.X..X......X..XXXXXXXX.";
 
         // attribut position qui represente la position du personage
         private Position personage;
+
+        public Position Personnage
+        {
+            get{return personage ;}
+        }
 
 
         // constructeur de Jeu

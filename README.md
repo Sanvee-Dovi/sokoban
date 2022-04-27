@@ -25,10 +25,14 @@
 * Création initcart qui permet d'initialisé la grille par les etats  en fonction des caratères fourni (X=mur,o=cible,.= vide etc..)
   
 ***
-## Partie 3 : Affichage de la carte en interface graphique 
+## Partie 3 : Affichage de la carte via interface graphique 
 
 * modification de main windows
 * parcours de la grille de jeu et ajoute d'image au case spécifique , (vide = sol.png, mur = mur.png , cible = cible .png)
 * création de la fonction dessiner et inpléme,tation de cette dernière qui s'assure de déssiner les différents de la grille de jeu
   
-***  
+***
+## Partie 4 : Affichages de Caisse et du personnage via interface graphique
+
+* creation et implentation de la fonction dessisnercaisses qui permet de dessiner nos caisses sur la grille de jeu
+* creation et implenmation de la fonction dessinerpersonnage qui permet de dessiner le personnage sur la grille de jeu
