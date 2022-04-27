@@ -29,6 +29,13 @@ namespace Sokoban_project
             get{return caisses ;}
         }
 
+        private int nbDeplacements;
+
+        public int NbDeplacements
+        {
+           get{return nbDeplacements ;} 
+        }
+
         //chaine de caratere contenant les symboles de la map
         static string grilleTxt = "..XXXXXX..XXX.oo.XXXX..o..o..XX........XXXX....XXX..XX.CXX...XXXC.XXX..X.CP.C.X..X......X..XXXXXXXX.";
 
@@ -49,6 +56,7 @@ namespace Sokoban_project
             if (CaseOk(newPos, key))
             {
                 personage = newPos;
+                nbDeplacements++;
             }
 
         }

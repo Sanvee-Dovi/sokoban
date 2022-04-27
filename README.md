@@ -64,4 +64,13 @@ ce projet  consiste à la création du célèbre jeu Sokoban , avec les différe
 
 * Création de la fonction CaisseInpos qui nous permet de detecter l'existence d'une caisse la notre prochain case par rapport au déplacement
 * gestion des déplacements des casse par rapport au faite si il y a l'existence d'un mur , d'un espace ou d'une autre caisse
+  
+***
+
+## Partie 8 : Gestion du nombre de déplacements
+
+* Gestion du nombre de déplacements en créant une variable pour
+* dessiner ou ecrire le nombre de déplacements via l'interface graphique grace à la fonction afficherDéplacements
+  
+***  
 

@@ -47,6 +47,12 @@ namespace Sokoban_project
             cnvMobiles.Children.Clear();
             DessinerCaisses();
             DessinerPersonnage();
+            AfficherNbDeplacements();
+        }
+
+        private void AfficherNbDeplacements()
+        {
+           txtNbDeplacement.Text = jeu.NbDeplacements.ToString();
         }
 
         private void Dessiner()
