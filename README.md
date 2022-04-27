@@ -36,3 +36,10 @@
 
 * creation et implentation de la fonction dessisnercaisses qui permet de dessiner nos caisses sur la grille de jeu
 * creation et implenmation de la fonction dessinerpersonnage qui permet de dessiner le personnage sur la grille de jeu
+  
+***
+
+## Partie 5 : Gestion des Déplacements du personnage
+
+* Creéation d'une fonction toucheappuyee qui permet d'effectuer les mouvements du personnage en fonction de la touche appuyée
+* Creéation et implémentation  de la fonction Redessiner qui permet de redesssiner les élément de la grille en cas de Déplacements 

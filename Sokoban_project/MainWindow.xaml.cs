@@ -27,15 +27,32 @@ namespace Sokoban_project
             InitializeComponent();
             jeu = new Jeu();
 
+            this.KeyDown += MainWindow_KeyDown;
             Dessiner();
 
+        }
+
+        public void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key.Equals(Key.Right) || e.Key.Equals(Key.Left) || e.Key.Equals(Key.Down) || e.Key.Equals(Key.Up))
+            {
+                jeu.ToucheAppuyee(e.Key);
+                Redessiner();
+            }
+            
+        }
+
+        private void Redessiner()
+        {
+            cnvMobiles.Children.Clear();
+            DessinerCaisses();
+            DessinerPersonnage();
         }
 
         private void Dessiner()
         {
             DessinerCarte();
-            DessinerCaisses();
-            DessinerPersonnage();
+            Redessiner();
         }
 
         private void DessinerPersonnage()

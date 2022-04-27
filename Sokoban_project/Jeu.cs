@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Sokoban_project
 {
@@ -37,6 +38,29 @@ namespace Sokoban_project
         public Position Personnage
         {
             get{return personage ;}
+        }
+
+        public  void ToucheAppuyee(Key key)
+        {
+            Position newPos = new Position(personage.x,personage.y);
+
+            switch (key)
+            {
+                case Key.Down:
+                    newPos.x++;
+                    break;
+                case Key.Up:
+                    newPos.x--;
+                    break;
+                case Key.Left:
+                    newPos.y--;
+                    break;
+                case Key.Right:
+                    newPos.y++;
+                    break;
+            }
+
+            personage = newPos;
         }
 
 
